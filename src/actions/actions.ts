@@ -21,7 +21,7 @@ export async function createPost(formData: FormData) {
       body,
     },
   });
-}
 
-//Revalidate
-revalidatePath("/posts");
+  //Revalidate
+  revalidatePath("/posts");
+}
